@@ -4,20 +4,28 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title class="ion-text-center">error404</ion-title>
+
+    <ion-title class="ion-text-center">Erro 404</ion-title>
 
     <ion-icon name="phone-portrait" slot="end"
-    size="large" class="ion-margin-end" routerLink="/home" color="danger"></ion-icon>
+    size="large" class="ion-margin-end" routerLink="/home" color="primary"></ion-icon>
 
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-<h2> ops</h2>
-<ion-img src="assets/error.png" alt="404 error"></ion-img>
-<p> Use a navegação para sair dessa página.</p>
+<ion-content class="ion-padding-horizontal">
 
-<p><ion-button><ion-icon name="home-outline">
+  <h2>Oooops!</h2>
 
-</ion-icon>Inicio</ion-button></p>
+  <ion-img src="assets/404error.jpg" alt="Erro 404"></ion-img>
+
+  <p>O conteúdo que você está tentando acessar não pode ser encontrado.</p>
+  <p>Use a navegação para sair dessa enrascada...</p>
+  <p>
+    <ion-button expand="block" routerLink="/home">
+      <ion-icon name="home" slot="start"></ion-icon>
+      Início
+    </ion-button>
+  </p>
+
 </ion-content>

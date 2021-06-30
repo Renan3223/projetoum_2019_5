@@ -9,12 +9,13 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  
+  //pagina inicial
   {
-    path: 'folder/:id',
-    loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
+    path: 'home',
+    loadChildren: () => import('./page/home/home.module').then( m => m.HomePageModule)
   },
 
-  
 
   //página sobre
   {
@@ -28,11 +29,7 @@ const routes: Routes = [
     loadChildren: () => import('./page/contacts/contacts.module').then( m => m.ContactsPageModule)
   },
   
-//pagina inicial
-  {
-    path: 'home',
-    loadChildren: () => import('./page/home/home.module').then( m => m.HomePageModule)
-  },
+
 
   //pagina curinga (rotas inexistente)
   {
