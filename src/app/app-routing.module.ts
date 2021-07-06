@@ -23,6 +23,12 @@ const routes: Routes = [
     loadChildren: () => import('./page/about/about.module').then( m => m.AboutPageModule)
   },
 
+  {
+    path: 'view/:id',
+    loadChildren: () => import('./page/view/view.module').then( m => m.ViewPageModule)
+  },
+       //pagina para exibir artigo unico
+
   //página de contatos
   {
     path: 'contacts',
@@ -36,6 +42,11 @@ const routes: Routes = [
     path: '**',
     loadChildren: () => import('./page/e404/e404.module').then( m => m.E404PageModule)
   },
+  {
+    path: 'view',
+    loadChildren: () => import('./page/view/view.module').then( m => m.ViewPageModule)
+  },
+
 
 ];
 
